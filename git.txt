@@ -1,0 +1,60 @@
+git diff --cached
+will show the diff between index area and repository.
+
+git rm --cached  ( git reset HEAD will do the same )
+the above command will delete files from the index area . (not from the working area or repo )
+
+git reset --hard
+it moves the current branch and updates repository, index and working area.
+
+git reset --mixed
+it moves the current branch and updates repository and index ( NOT the working area )
+
+gitreset --soft
+it moves the curret branch and updates the repository alone ( NOT working and index areas )
+
+git stash --include-untracked
+will copy the untracked files also to the stash
+
+git stash apply
+git stash list
+git stash clear
+
+git show HEAD^   
+above will show the first commit from HEAD
+
+git show HEAD~2
+above will show the second commit from HEAD
+
+git show HEAD~2^2
+above will show the second parent of the second commit  (It is useful when there is a merge in the history. In merges we will have two parents)
+
+git blame <filename>
+will show which lines got changed in which commits
+
+git log --grep <stringname>
+to chk for a string in commits
+
+--oneline will give results in one line
+
+git log <branchname1>..<branchname2> --oneline
+will show list of commits are not there in branchname1 but in branchname2
+
+git commit --amend
+will amend the last commit with the currently staged contents and create a new commit. so the previous commit history will be deleted.
+
+git rebase -i
+to squash two commits
+
+git rebase --continue
+
+git reflog HEAD (or) git reflog <branchname>
+it will show all the logs of that branch.
+we can see the commits which are not part of the branch now. ( it was there earlier )
+
+git revert <commitid>
+will revert the code changes of the commitid and create a new commit in the branch( with the reverted changes)
+
+cherry-pick
+is used to take one or two commits from one branch to another branch ( like rebasing )
+
