@@ -1,3 +1,5 @@
+BRANCH is just reference to a commit.( like a pointer to a commit)
+
 HEAD is just a reference to a branch.( like a pointer to a pointer )
 
 git diff --cached
