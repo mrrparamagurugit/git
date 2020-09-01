@@ -3,6 +3,9 @@ BRANCH is just reference to a commit.( like a pointer to a commit)
 HEAD is just a reference to a branch.( like a pointer to a pointer )
 ( But We can make HEAD pointing to a commit. ( by doing so we will get detached HEAD message))
 
+TAGS:
+BRANCH'es will move when u do a new commit. But TAGS dont move. It will stay there forever ( pointing to a commit)
+
 git diff --cached
 will show the diff between index area and repository.
 
