@@ -1,3 +1,5 @@
+HEAD is just a reference to a branch.( like a pointer to a pointer )
+
 git diff --cached
 will show the diff between index area and repository.
 
